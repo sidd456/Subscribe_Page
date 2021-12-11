@@ -1,0 +1,141 @@
+body {
+    background: url("../layouts/background-pic.jpg");
+    overflow: hidden;
+}
+
+h1,h2,h4,h5,span {
+    color: white;
+}
+
+h4{
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+.top {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.side {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    left: 1111px;
+    top: 111px;
+}
+
+.bottom {
+    display: flex;
+    gap: 15px;
+}
+
+
+.middle-contain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+
+
+ 
+
+
+
+.bottom-contain {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.bottom-contain span {
+    padding-right: 20px;
+}
+
+
+
+@media only screen and (max-width:800px) {
+
+
+
+    
+.middle-contain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+    .bottom-contain {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 80%;
+        justify-content: flex-end;
+    }
+
+    .right {
+        display: none;
+    }
+
+}
